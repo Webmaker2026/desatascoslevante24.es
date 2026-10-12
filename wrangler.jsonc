@@ -1,1 +1,13 @@
-﻿{"name":"desatascoslevante24-es","compatibility_date":"2026-10-12","assets":{"directory":"."}}
+{
+  // Cloudflare Workers — solo activos estáticos. dist/ se genera con `npm run build` y se versiona en git,
+  // así el despliegue no depende de un comando de build en Cloudflare.
+  "name": "desatascoslevante24-es",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./dist",
+    // /zonas -> /zonas/ (301) y /zonas/ -> dist/zonas/index.html
+    "html_handling": "auto-trailing-slash",
+    // Rutas inexistentes -> dist/404.html con estado 404
+    "not_found_handling": "404-page"
+  }
+}

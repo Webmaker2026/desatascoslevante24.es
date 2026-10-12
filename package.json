@@ -1,0 +1,12 @@
+{
+  "name": "desatascoslevante24-es",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "npx wrangler@4 dev --port 8787",
+    "deploy": "node scripts/build.mjs && npx wrangler@4 deploy"
+  },
+  "engines": { "node": ">=20" }
+}

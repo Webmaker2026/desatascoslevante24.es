@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desatascoslevante24.es/sitemap.xml
