@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,500&display=swap" rel="stylesheet"><script src="./image-slot.js"></script><style>body{margin:0;background:#dcd6cc}a{color:inherit;text-decoration:none}a:hover{color:#98643F}*:focus-visible{outline:2px solid #B98552;outline-offset:3px}</style></helmet>
+<div data-screen-label="Inicio v3 · Escritorio" style="width:1440px;margin:0 auto;background:#F7F5F0;color:#14263D;font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.6">
+
+  <div style="background:#0D1B2A;color:#C9D1DC;font-size:13px">
+    <div style="max-width:1200px;margin:0 auto;padding:9px 0;display:flex;justify-content:space-between;align-items:center">
+      <span style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;border-radius:50%;background:#B98552"></span>Servicio de desatascos 24 horas · 365 días</span>
+      <span>Alicante · Benidorm · Torrevieja · Elche · Altea y alrededores</span>
+    </div>
+  </div>
+  <header style="background:#FFFFFF;border-bottom:1px solid #E8E1D7;position:sticky;top:0;z-index:20">
+    <div style="max-width:1200px;margin:0 auto;height:84px;display:flex;align-items:center;gap:40px">
+      <a href="/" aria-label="Desatascos Levante 24 · Inicio" style="display:flex;align-items:center;gap:12px">
+        <span style="width:40px;height:40px;border-radius:4px;background:#14263D;color:#B98552;display:grid;place-items:center"><svg width="22" height="22" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><path d="M4 4v9a7 7 0 0 0 7 7h9v-6h-8a2 2 0 0 1-2-2V4M2 4h10m8 8v10"></path></svg></span>
+        <span style="display:flex;flex-direction:column;line-height:1.1"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:600">Desatascos Levante 24</span><span style="font-size:9.5px;letter-spacing:.22em;font-weight:600;color:#6B7586;margin-top:4px">DESATASCOS · INSPECCIÓN · 24 H</span></span>
+      </a>
+      <nav aria-label="Navegación principal" style="display:flex;gap:32px;margin-left:auto;font-size:14.5px;font-weight:500;color:#334155"><a href="/servicios/desatascos-24-horas/">Desatascos 24 h</a><a href="/servicios/inspeccion-camara-tuberias/">Inspección con cámara</a><a href="/zonas/">Zonas</a><a href="/contacto/">Contacto</a></nav>
+      <a href="#whatsapp" style="font-size:14.5px;font-weight:600">WhatsApp</a>
+      <a href="#llamar" style="display:flex;align-items:center;gap:10px;background:#98643F;color:#FFFFFF;border-radius:4px;padding:12px 20px;font-size:14.5px;font-weight:600" style-hover="background:#82532F;color:#FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><path d="{{ i.phone }}"></path></svg>Llamar 24 h</a>
+    </div>
+  </header>
+
+  <section data-screen-label="Hero" style="position:relative;display:grid;grid-template-columns:600px 1fr;min-height:640px;background:#0D1B2A">
+    <div style="padding:80px 64px 120px max(120px, calc((1440px - 1200px) / 2));color:#FFFFFF;display:flex;flex-direction:column;justify-content:center">
+      <div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.2em;font-weight:700;color:#D9B48A;margin-bottom:24px"><span style="width:28px;height:1px;background:#B98552"></span>URGENCIAS 24 H · PROVINCIA DE ALICANTE</div>
+      <h1 style="font-family:'Source Serif 4',Georgia,serif;font-size:52px;line-height:1.08;font-weight:500;letter-spacing:-.015em;margin:0 0 22px;text-wrap:balance">Desatascos 24 horas en Alicante y <em style="color:#D9B48A">toda la Costa Blanca.</em></h1>
+      <p style="font-size:18px;line-height:1.6;color:#C9D1DC;margin:0 0 34px;max-width:440px">WC, fregaderos, tuberías y arquetas, e inspección con cámara cuando el atasco se repite. Una llamada y te decimos cómo seguir.</p>
+      <div style="display:flex;gap:12px">
+        <a href="#llamar" style="display:flex;align-items:center;gap:12px;background:#B98552;color:#0D1B2A;border-radius:4px;padding:17px 26px;font-size:16.5px;font-weight:700" style-hover="background:#C9965F;color:#0D1B2A"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.9"><path d="{{ i.phone }}"></path></svg>Llamar ahora</a>
+        <a href="#whatsapp" style="display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.35);color:#FFFFFF;border-radius:4px;padding:17px 24px;font-size:16.5px;font-weight:600" style-hover="border-color:#FFFFFF;color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.chat }}"></path></svg>WhatsApp</a>
+      </div>
+      <p style="font-size:13.5px;color:#97A3B4;margin:16px 0 0">Disponibilidad y presupuesto confirmados antes de intervenir.</p>
+    </div>
+    <figure style="margin:0;position:relative">
+      <img src="assets/desatascos.webp" alt="Imagen ilustrativa de un técnico guiando una manguera de desatasco en una arqueta" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center">
+      <figcaption style="position:absolute;right:20px;top:18px;font-size:11px;color:#FFFFFF;background:rgba(13,27,42,.55);padding:3px 8px;border-radius:3px">Imagen ilustrativa</figcaption>
+    </figure>
+    <div style="position:absolute;left:50%;transform:translateX(-50%);bottom:-64px;width:1200px;display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;background:#FFFFFF;border-radius:6px;box-shadow:0 24px 60px rgba(13,27,42,.18)">
+      <div style="padding:26px 30px;background:#F7F5F0;border-radius:6px 0 0 6px"><div style="font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#98643F;margin-bottom:6px">AL LLAMAR, TEN A MANO</div><div style="font-family:'Source Serif 4',Georgia,serif;font-size:20px;line-height:1.25">Tres datos que agilizan la ayuda</div></div>
+      <sc-for list="{{ callInfo }}" as="c" hint-placeholder-count="3"><div style="padding:26px 28px;border-left:1px solid #E8E1D7;display:flex;gap:14px"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:26px;line-height:1;color:#B98552">{{ c.n }}</span><div><div style="font-size:15.5px;font-weight:700;margin-bottom:2px">{{ c.title }}</div><div style="font-size:14px;line-height:1.45;color:#4A5568">{{ c.text }}</div></div></div></sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="Síntomas" style="padding:150px 0 96px">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:400px 1fr;gap:72px">
+      <div>
+        <div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#98643F;margin-bottom:16px">ANTES DE QUE VAYA A MÁS</div>
+        <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;line-height:1.12;font-weight:500;margin:0 0 18px;letter-spacing:-.01em">¿Reconoces alguno de estos síntomas?</h2>
+        <p style="font-size:17px;color:#334155;margin:0 0 28px">La mayoría de atascos avisan. Identificar la señal ayuda a valorar si basta un desatasco o conviene revisar la tubería con cámara.</p>
+        <a href="#llamar" style="display:inline-flex;align-items:center;gap:10px;font-size:15.5px;font-weight:700;color:#98643F;padding-bottom:4px;border-bottom:1px solid #D9B48A">Lo tengo ahora: llamar<svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.arrow }}"></path></svg></a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid #DCD3C6">
+        <sc-for list="{{ symptoms }}" as="s" hint-placeholder-count="6">
+          <div style="padding:26px 24px 28px;border-bottom:1px solid #DCD3C6;border-left:{{ s.rule }};display:flex;flex-direction:column;gap:8px">
+            <h3 style="font-family:'Source Serif 4',Georgia,serif;font-size:21px;font-weight:500;margin:0;line-height:1.25">{{ s.title }}</h3>
+            <p style="font-size:15px;line-height:1.5;color:#4A5568;margin:0">{{ s.text }}</p>
+            <span style="margin-top:6px;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;color:{{ s.tagColor }};background:{{ s.tagBg }};padding:4px 10px;border-radius:20px">{{ s.tag }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Servicios" style="background:#FFFFFF;padding:96px 0">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:40px">
+        <div><div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#98643F;margin-bottom:14px">NUESTROS SERVICIOS</div><h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;line-height:1.12;font-weight:500;margin:0;letter-spacing:-.01em">Seis situaciones, dos especialidades.</h2></div>
+        <p style="font-size:17px;color:#334155;margin:0;max-width:440px">Nos centramos en desatascar e inspeccionar. Elige tu caso para ver qué suele ocurrir y qué puedes esperar.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:380px 1fr;border:1px solid #E8E1D7;border-radius:8px;overflow:hidden">
+        <div style="background:#F7F5F0;display:flex;flex-direction:column">
+          <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+            <button onClick="{{ s.select }}" aria-pressed="{{ s.active }}" style="display:grid;grid-template-columns:36px 1fr 16px;gap:10px;align-items:center;padding:20px 26px;border:0;border-bottom:1px solid #E8E1D7;border-left:3px solid {{ s.bar }};background:{{ s.bg }};cursor:pointer;text-align:left;font-family:Manrope,system-ui,sans-serif;color:#14263D" style-hover="background:#FFFFFF">
+              <span style="font-size:12.5px;font-weight:700;color:#98643F">{{ s.n }}</span>
+              <span style="display:flex;flex-direction:column"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:19px;font-weight:500;line-height:1.25">{{ s.title }}</span><span style="font-size:12.5px;color:#6B7586">{{ s.group }}</span></span>
+              <svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:{{ s.bar }};stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.arrow }}"></path></svg>
+            </button>
+          </sc-for>
+          <div style="margin-top:auto;padding:22px 26px;font-size:13.5px;color:#6B7586">No realizamos reformas ni fontanería general.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;min-height:560px">
+          <div style="position:relative;background:#0D1B2A">
+            <sc-if value="{{ cur.isCam }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;inset:0;overflow:hidden"><img src="assets/inspeccion.webp" alt="Detalle ilustrativo del monitor de una cámara de inspección" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:44% 20%;transform:scale(2.4);transform-origin:45% 26%"></div>
+              <span style="position:absolute;left:16px;bottom:14px;font-size:11px;color:#FFFFFF;background:rgba(13,27,42,.6);padding:3px 8px;border-radius:3px">Detalle ilustrativo del monitor</span>
+            </sc-if>
+            <sc-if value="{{ cur.isDrain }}" hint-placeholder-val="{{ true }}">
+              <div style="position:absolute;inset:0;overflow:hidden"><img src="assets/desatascos.webp" alt="Detalle ilustrativo de una manguera de desatasco entrando en una arqueta" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% 75%;transform:scale(1.7);transform-origin:50% 78%"></div>
+              <span style="position:absolute;left:16px;bottom:14px;font-size:11px;color:#FFFFFF;background:rgba(13,27,42,.6);padding:3px 8px;border-radius:3px">Detalle ilustrativo</span>
+            </sc-if>
+          </div>
+          <div style="padding:40px 40px 36px;display:flex;flex-direction:column">
+            <div style="font-size:12px;letter-spacing:.18em;font-weight:700;color:#98643F;margin-bottom:10px">{{ cur.kicker }}</div>
+            <h3 style="font-family:'Source Serif 4',Georgia,serif;font-size:28px;line-height:1.18;font-weight:500;margin:0 0 14px">{{ cur.title }}</h3>
+            <p style="font-size:16px;color:#334155;margin:0 0 22px">{{ cur.text }}</p>
+            <div style="font-size:13px;font-weight:700;letter-spacing:.06em;color:#14263D;margin-bottom:8px">SEÑALES HABITUALES</div>
+            <sc-for list="{{ cur.signs }}" as="g" hint-placeholder-count="3"><div style="display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-size:15px;color:#334155"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#B98552;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:4px"><path d="{{ i.check }}"></path></svg>{{ g }}</div></sc-for>
+            <div style="background:#F7F5F0;border-radius:6px;padding:16px 18px;margin:18px 0 24px;font-size:14.5px;line-height:1.5;color:#334155"><strong style="color:#14263D">Qué puedes esperar · </strong>{{ cur.expect }}</div>
+            <div style="margin-top:auto;display:flex;gap:18px;align-items:center">
+              <a href="#llamar" style="display:flex;align-items:center;gap:10px;background:#98643F;color:#FFFFFF;border-radius:4px;padding:13px 20px;font-size:15px;font-weight:600" style-hover="background:#82532F;color:#FFFFFF">Consultar este caso</a>
+              <a href="{{ cur.href }}" style="font-size:14.5px;font-weight:600;color:#98643F">Ver el servicio →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Inspección con cámara" style="background:#0D1B2A;color:#FFFFFF;padding:104px 0 112px;overflow:hidden">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:end;margin-bottom:56px">
+        <div><div style="display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.2em;font-weight:700;color:#D9B48A;margin-bottom:18px"><span style="width:28px;height:1px;background:#B98552"></span>INSPECCIÓN DE TUBERÍAS CON CÁMARA</div><h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:40px;line-height:1.1;font-weight:500;margin:0;letter-spacing:-.01em">Ver dentro de la tubería antes de decidir.</h2></div>
+        <p style="font-size:17.5px;line-height:1.65;color:#C9D1DC;margin:0">Cuando un atasco vuelve, repetir la misma intervención no siempre lo resuelve. La cámara recorre el tramo accesible y muestra dónde está la obstrucción y en qué estado se encuentra la conducción.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1.45fr 1fr;gap:0;position:relative">
+        <figure style="margin:0;position:relative;height:520px;border-radius:6px;overflow:hidden">
+          <img src="assets/hero.webp" alt="Imagen ilustrativa de un técnico realizando una inspección con cámara junto a una arqueta" style="width:100%;height:100%;object-fit:cover;object-position:45% center">
+          <figcaption style="position:absolute;left:16px;top:14px;font-size:11px;color:#FFFFFF;background:rgba(13,27,42,.6);padding:3px 8px;border-radius:3px">Imagen ilustrativa</figcaption>
+        </figure>
+        <div style="margin:48px 0 48px -64px;background:#14263D;border:1px solid rgba(217,180,138,.25);border-radius:6px;padding:36px 38px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.35)">
+          <div style="font-size:12px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-bottom:14px">TRAS LA INSPECCIÓN TE EXPLICAMOS</div>
+          <sc-for list="{{ camReport }}" as="r" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:36px 1fr;gap:6px;padding:16px 0;border-top:1px solid rgba(255,255,255,.1)"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:20px;color:#B98552">{{ r.n }}</span><div><div style="font-family:'Source Serif 4',Georgia,serif;font-size:20px;margin-bottom:4px">{{ r.title }}</div><div style="font-size:14.5px;line-height:1.5;color:#B3BDCB">{{ r.text }}</div></div></div></sc-for>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.12)">
+        <sc-for list="{{ camCols }}" as="c" hint-placeholder-count="3">
+          <div><h3 style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:500;margin:0 0 14px">{{ c.title }}</h3><sc-for list="{{ c.items }}" as="it" hint-placeholder-count="3"><div style="display:flex;gap:10px;padding:5px 0;font-size:15.5px;color:#C9D1DC"><span style="color:#B98552">—</span>{{ it }}</div></sc-for></div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:32px;margin-top:48px;padding:24px 28px;background:rgba(255,255,255,.04);border-radius:6px">
+        <p style="margin:0;font-size:15px;color:#B3BDCB">La inspección no incluye por sí misma una reparación. En ocasiones es necesario un desatasco previo para que la cámara avance.</p>
+        <a href="/servicios/inspeccion-camara-tuberias/" style="flex:none;display:flex;align-items:center;gap:10px;background:#B98552;color:#0D1B2A;border-radius:4px;padding:14px 22px;font-size:15px;font-weight:700" style-hover="background:#C9965F;color:#0D1B2A">Conocer la inspección<svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.arrow }}"></path></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Cómo funciona" style="padding:104px 0 96px">
+    <div style="max-width:1200px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start;margin-bottom:64px">
+        <div><div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#98643F;margin-bottom:14px">ATENCIÓN 24 HORAS · CÓMO FUNCIONA</div><h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;line-height:1.12;font-weight:500;margin:0 0 18px;letter-spacing:-.01em">De la llamada a la solución, sin sorpresas.</h2><p style="font-size:17px;color:#334155;margin:0;max-width:600px">Atendemos de día, de noche y en fin de semana. Antes de desplazarnos confirmamos disponibilidad para tu dirección y te damos una estimación; no prometemos tiempos que no podamos cumplir.</p></div>
+        <aside style="background:#E8E1D7;border-radius:6px;padding:28px 30px"><div style="font-family:'Source Serif 4',Georgia,serif;font-size:21px;margin-bottom:12px">Mientras esperas</div><sc-for list="{{ waiting }}" as="w" hint-placeholder-count="3"><div style="display:flex;gap:10px;padding:6px 0;font-size:15px;color:#334155;border-top:1px solid #D6CCBD"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#98643F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:5px"><path d="{{ i.check }}"></path></svg>{{ w }}</div></sc-for></aside>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
+        <div style="position:absolute;left:28px;right:28px;top:27px;height:1px;background:linear-gradient(90deg,#B98552,#D6CCBD)"></div>
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+          <div style="position:relative;display:flex;flex-direction:column;gap:14px">
+            <span style="width:56px;height:56px;border-radius:50%;background:{{ s.nodeBg }};border:1px solid #B98552;color:{{ s.nodeFg }};display:grid;place-items:center;font-family:'Source Serif 4',Georgia,serif;font-size:21px">{{ s.n }}</span>
+            <h3 style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-weight:500;margin:10px 0 0;line-height:1.2">{{ s.title }}</h3>
+            <p style="font-size:15.5px;line-height:1.55;color:#334155;margin:0">{{ s.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Zonas" style="background:#E8E1D7;padding:96px 0">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.25fr;gap:72px;align-items:center">
+      <div>
+        <div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#98643F;margin-bottom:14px">ZONAS DE SERVICIO</div>
+        <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;line-height:1.12;font-weight:500;margin:0 0 18px;letter-spacing:-.01em">A lo largo de la Costa Blanca, de la Marina Baixa a la Vega Baja.</h2>
+        <p style="font-size:17px;color:#334155;margin:0 0 24px">Cinco ciudades de referencia y sus municipios cercanos. Cada zona tiene su propia página con información local: accesos, tipo de viviendas y preguntas habituales.</p>
+        <div style="background:#F7F5F0;border-radius:6px;padding:20px 22px;font-size:15px;color:#334155;margin-bottom:26px"><strong style="color:#14263D">¿Tu localidad no aparece?</strong> Llámanos: confirmamos la cobertura para tu dirección. No indicamos oficinas físicas en estas localidades.</div>
+        <a href="/zonas/" style="display:inline-flex;align-items:center;gap:10px;font-size:15.5px;font-weight:700;color:#98643F;padding-bottom:4px;border-bottom:1px solid #C9A47C">Ver todas las zonas<svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.arrow }}"></path></svg></a>
+      </div>
+      <div style="background:#14263D;color:#FFFFFF;border-radius:8px;padding:36px 40px 30px;box-shadow:0 24px 50px rgba(13,27,42,.2)">
+        <div style="display:flex;justify-content:space-between;font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-bottom:18px"><span>NORTE · MARINA BAIXA</span><span>PROVINCIA DE ALICANTE</span></div>
+        <div style="position:relative">
+          <div style="position:absolute;left:9px;top:12px;bottom:12px;width:1px;background:linear-gradient(180deg,#B98552,rgba(185,133,82,.3))"></div>
+          <sc-for list="{{ cities }}" as="c" hint-placeholder-count="5">
+            <a href="{{ c.href }}" style="position:relative;display:grid;grid-template-columns:20px 170px 1fr 18px;gap:18px;align-items:center;padding:15px 0;border-bottom:{{ c.rule }}" style-hover="color:#D9B48A">
+              <span style="width:19px;height:19px;border-radius:50%;background:#14263D;border:1px solid #B98552;display:grid;place-items:center"><span style="width:7px;height:7px;border-radius:50%;background:#B98552"></span></span>
+              <span style="display:flex;flex-direction:column"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:24px;line-height:1.15">{{ c.name }}</span><span style="font-size:12.5px;color:#97A3B4">{{ c.region }}</span></span>
+              <span style="font-size:13.5px;line-height:1.45;color:#C9D1DC">{{ c.areas }}</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#B98552;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.arrow }}"></path></svg>
+            </a>
+          </sc-for>
+        </div>
+        <div style="font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-top:14px">SUR · VEGA BAJA</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Preguntas" style="background:#FFFFFF;padding:96px 0">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:400px 1fr;gap:72px">
+      <div>
+        <div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#98643F;margin-bottom:14px">PREGUNTAS FRECUENTES</div>
+        <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:38px;line-height:1.12;font-weight:500;margin:0 0 18px;letter-spacing:-.01em">Respuestas claras antes de llamar.</h2>
+        <p style="font-size:17px;color:#334155;margin:0 0 28px">Preferimos explicar lo que depende de cada caso antes que prometer lo que no podemos confirmar.</p>
+        <div style="border-top:1px solid #E8E1D7;padding-top:20px;display:flex;flex-direction:column;gap:12px"><sc-for list="{{ principles }}" as="p" hint-placeholder-count="3"><div style="display:flex;gap:12px;font-size:15px;color:#334155"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:#98643F;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:4px"><path d="{{ i.shield }}"></path></svg>{{ p }}</div></sc-for></div>
+      </div>
+      <div style="border-top:1px solid #E8E1D7">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="7">
+          <div style="border-bottom:1px solid #E8E1D7">
+            <button onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;background:transparent;border:0;cursor:pointer;font-family:'Source Serif 4',Georgia,serif;font-size:20px;font-weight:500;text-align:left;color:#14263D">{{ f.q }}<span style="width:30px;height:30px;border-radius:50%;border:1px solid {{ f.ring }};background:{{ f.fill }};color:{{ f.signColor }};display:grid;place-items:center;flex:none;font-family:Manrope,sans-serif;font-size:16px;line-height:1">{{ f.sign }}</span></button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0;padding:0 72px 24px 0;font-size:16px;color:#334155">{{ f.a }}</p></sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Cierre" style="background:#F7F5F0;padding:96px 0">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;border-radius:8px;overflow:hidden;box-shadow:0 30px 70px rgba(13,27,42,.16)">
+      <div style="background:#14263D;color:#FFFFFF;padding:56px 56px 52px">
+        <div style="font-size:12px;letter-spacing:.2em;font-weight:700;color:#D9B48A;margin-bottom:16px">¿UN ATASCO AHORA MISMO?</div>
+        <h2 style="font-family:'Source Serif 4',Georgia,serif;font-size:40px;line-height:1.12;font-weight:500;margin:0 0 16px">Que el agua vuelva a su sitio.</h2>
+        <p style="font-size:17px;color:#C9D1DC;margin:0 0 34px;max-width:460px">Cuéntanos qué ocurre y dónde estás. Te confirmamos disponibilidad, desplazamiento y presupuesto antes de empezar.</p>
+        <div style="display:flex;gap:12px">
+          <a href="#llamar" style="display:flex;align-items:center;gap:12px;background:#B98552;color:#0D1B2A;border-radius:4px;padding:17px 28px;font-size:17px;font-weight:700" style-hover="background:#C9965F;color:#0D1B2A"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.9"><path d="{{ i.phone }}"></path></svg>Llamar 24 h</a>
+          <a href="#whatsapp" style="display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.35);color:#FFFFFF;border-radius:4px;padding:17px 24px;font-size:16.5px;font-weight:600" style-hover="border-color:#FFFFFF;color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.chat }}"></path></svg>WhatsApp</a>
+        </div>
+      </div>
+      <div style="background:#FFFFFF;padding:52px 48px">
+        <div style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;margin-bottom:6px">Si escribes por WhatsApp</div>
+        <p style="font-size:15px;color:#4A5568;margin:0 0 18px">Un mensaje breve con estos datos nos permite responderte mejor:</p>
+        <sc-for list="{{ waMsg }}" as="m" hint-placeholder-count="4"><div style="display:grid;grid-template-columns:30px 1fr;padding:11px 0;border-top:1px solid #E8E1D7;font-size:15.5px"><span style="font-family:'Source Serif 4',Georgia,serif;color:#B98552">{{ m.n }}</span>{{ m.t }}</div></sc-for>
+        <p style="font-size:12.5px;color:#6B7586;margin:16px 0 0">WhatsApp es un servicio de Meta. Evita enviar datos sensibles; un mensaje no implica una reserva confirmada.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0D1B2A;color:#C9D1DC;font-size:14px">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:48px;padding:64px 0 48px">
+      <div><div style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><span style="width:36px;height:36px;border-radius:4px;background:rgba(255,255,255,.08);color:#B98552;display:grid;place-items:center"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><path d="M4 4v9a7 7 0 0 0 7 7h9v-6h-8a2 2 0 0 1-2-2V4M2 4h10m8 8v10"></path></svg></span><span style="font-family:'Source Serif 4',Georgia,serif;font-size:20px;color:#FFFFFF">Desatascos Levante 24</span></div><p style="margin:0 0 16px;max-width:320px">Desatascos e inspección de tuberías con cámara en la provincia de Alicante, a cualquier hora.</p><p style="margin:0;font-size:12px;color:#7E8A9C;max-width:300px">Las imágenes son ilustrativas, generadas con IA; no representan trabajos ni personal de la empresa.</p></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-bottom:6px">SERVICIOS</div><a href="/servicios/desatascos-24-horas/">Desatascos 24 horas</a><a href="/servicios/inspeccion-camara-tuberias/">Inspección con cámara</a><a href="/zonas/">Zonas de servicio</a><a href="/contacto/">Contacto</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-bottom:6px">ZONAS</div><a href="/desatascos-alicante/">Desatascos en Alicante</a><a href="/desatascos-benidorm/">Desatascos en Benidorm</a><a href="/desatascos-torrevieja/">Desatascos en Torrevieja</a><a href="/desatascos-elche/">Desatascos en Elche</a><a href="/desatascos-altea/">Desatascos en Altea</a></div>
+      <div style="display:flex;flex-direction:column;gap:10px"><div style="font-size:11.5px;letter-spacing:.18em;font-weight:700;color:#D9B48A;margin-bottom:6px">CONTACTO DIRECTO</div><span>24 horas · 365 días</span><a href="#llamar" style="display:flex;align-items:center;gap:10px;background:#B98552;color:#0D1B2A;border-radius:4px;padding:12px 18px;font-weight:700;margin-top:6px;align-self:flex-start" style-hover="background:#C9965F;color:#0D1B2A">Llamar ahora</a><a href="/contacto/">Ver canales de contacto</a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1)"><div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;padding:20px 0;font-size:13px;color:#7E8A9C"><span>© 2026 Desatascos Levante 24</span><div style="display:flex;gap:24px"><a href="/aviso-legal/">Aviso legal</a><a href="/politica-de-privacidad/">Privacidad</a><a href="/politica-de-cookies/">Cookies</a><a href="#cookies" style="text-decoration:underline">Configurar cookies</a></div></div></div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { svc: 0, open: 0 };
+  renderVals() {
+    const i = {
+      phone: 'M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z',
+      chat: 'M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z',
+      arrow: 'M4 12h16m-6-6 6 6-6 6', check: 'm5 12 4 4L19 6', shield: 'm12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Zm-4 9 3 3 5-6',
+    };
+    const D = '/servicios/desatascos-24-horas/', C = '/servicios/inspeccion-camara-tuberias/';
+    const SV = [
+      { title: 'Desatascos urgentes 24 h', group: 'Desatasco', cam: false, href: D, kicker: 'INTERVENCIÓN URGENTE', text: 'Para cuando el agua deja de fluir y no puede esperar: viviendas, comunidades y locales, de día o de noche.', signs: ['El agua no baja o rebosa', 'Varios desagües afectados a la vez', 'Arqueta o registro con agua'], expect: 'te pedimos localidad y punto afectado, confirmamos disponibilidad y presupuesto, y valoramos el método según el acceso.' },
+      { title: 'Desatasco de WC', group: 'Desatasco', cam: false, href: D, kicker: 'BAÑO', text: 'Inodoros que no evacúan, que rebosan o que tardan cada vez más en vaciar la cisterna.', signs: ['El nivel del agua sube al tirar de la cadena', 'Gorgoteo en ducha o lavabo al usar el WC', 'Malos olores persistentes'], expect: 'no sigas tirando de la cadena. Valoramos si el atasco está en el propio inodoro o más adelante en la conducción.' },
+      { title: 'Desatasco de fregaderos', group: 'Desatasco', cam: false, href: D, kicker: 'COCINA', text: 'Fregaderos que no desaguan o lo hacen despacio, a menudo por acumulación de grasa y restos.', signs: ['Desagüe lento que empeora', 'Agua que retorna por el otro seno', 'Olor en la zona del sifón'], expect: 'evita productos químicos. Si ya has usado alguno, dínoslo: condiciona cómo se trabaja.' },
+      { title: 'Tuberías y arquetas', group: 'Desatasco', cam: false, href: D, kicker: 'CONDUCCIONES', text: 'Lavabos, duchas, bajantes, arquetas y conducciones de desagüe en viviendas y comunidades.', signs: ['Varias tomas afectadas a la vez', 'Arqueta que rebosa en el exterior', 'Problema compartido con vecinos'], expect: 'en comunidades conviene avisar al administrador. Indica si hay un registro accesible.' },
+      { title: 'Inspección con cámara', group: 'Diagnóstico', cam: true, href: C, kicker: 'DIAGNÓSTICO', text: 'Una cámara recorre el tramo accesible de la tubería para observar su interior sin abrir toda la conducción.', signs: ['Atasco que vuelve tras desatascar', 'Vivienda que lleva tiempo cerrada', 'Dudas sobre el estado de la tubería'], expect: 'te explicamos qué tramo se ha podido revisar, lo observado y el siguiente paso recomendado.' },
+      { title: 'Localización de obstrucciones', group: 'Diagnóstico', cam: true, href: C, kicker: 'LOCALIZACIÓN', text: 'Situar dónde está el atasco antes de decidir cómo actuar, sobre todo en tramos largos o con varios registros.', signs: ['No se sabe en qué tramo está el atasco', 'Varios registros o arquetas', 'Intervenciones previas sin resultado'], expect: 'la visibilidad, el agua acumulada y los giros determinan el alcance; lo valoramos antes de empezar.' },
+    ];
+    const cur = { ...SV[this.state.svc], isCam: SV[this.state.svc].cam, isDrain: !SV[this.state.svc].cam };
+    const services = SV.map((s, k) => { const a = this.state.svc === k; return { n: '0' + (k + 1), title: s.title, group: s.group, active: a, bar: a ? '#B98552' : 'transparent', bg: a ? '#FFFFFF' : 'transparent', select: () => this.setState({ svc: k }) }; });
+    const faqs = [
+      ['¿Puedo contactar de noche o en fin de semana?', 'El servicio está orientado a desatascos 24 horas, incluidos fines de semana. Al contactar, confirmamos la disponibilidad para tu ubicación y las condiciones antes del desplazamiento.'],
+      ['¿En cuánto tiempo podéis llegar?', 'Depende de la ubicación y de la disponibilidad en ese momento. Consulta una estimación al contactar; no prometemos un tiempo fijo que no podamos confirmar.'],
+      ['¿Cuánto cuesta un desatasco?', 'El importe depende del acceso, la localización del atasco, los medios necesarios y el horario. Solicita las condiciones y el presupuesto antes de autorizar la intervención. No publicamos una tarifa genérica que pueda no ajustarse a tu caso.'],
+      ['¿Cuándo conviene una inspección con cámara?', 'Cuando el atasco se repite, afecta a varios puntos o no se sabe dónde está. Permite observar el tramo accesible y orientar la intervención antes de repetirla.'],
+      ['¿La cámara permite ver cualquier tubería?', 'No siempre. El diámetro, los giros, el agua acumulada y las obstrucciones pueden limitar la inspección. Se valora el acceso y se explica qué tramo puede revisarse.'],
+      ['¿Qué zonas cubrís?', 'Alicante, Benidorm, Torrevieja, Elche, Altea y localidades del entorno en la provincia de Alicante. Indica tu dirección para confirmar cobertura.'],
+      ['¿Ofrecéis otros servicios de fontanería?', 'Nos centramos exclusivamente en desatascos y en inspección de tuberías con cámara.'],
+    ].map(([q, a], k) => { const o = this.state.open === k; return { q, a, open: o, sign: o ? '−' : '+', ring: o ? '#98643F' : '#D9C6AE', fill: o ? '#98643F' : 'transparent', signColor: o ? '#FFFFFF' : '#98643F', toggle: () => this.setState({ open: o ? -1 : k }) }; });
+    const n = (k) => '0' + (k + 1);
+    return {
+      i, services, cur, faqs,
+      callInfo: [['Tu localidad', 'Y la dirección, para confirmar cobertura.'], ['Qué desagüe falla', 'WC, fregadero, ducha, arqueta…'], ['Qué has probado', 'Sobre todo si usaste productos químicos.']].map(([title, text], k) => ({ n: n(k), title, text })),
+      symptoms: [
+        ['El agua no baja', 'Fregadero, ducha o lavabo que retiene el agua o tarda cada vez más.', 'Desatasco'],
+        ['Gorgoteos', 'Ruidos en otros desagües al vaciar el WC o la lavadora: señal de aire atrapado.', 'Desatasco'],
+        ['Malos olores', 'Olor persistente en baño, cocina o patio aunque se limpie a menudo.', 'Valoración'],
+        ['El agua retorna', 'Aparece agua en la ducha o en otro seno al usar un desagüe distinto.', 'Desatasco'],
+        ['Arqueta que rebosa', 'Agua saliendo por un registro exterior o por el suelo del patio.', 'Urgente'],
+        ['El atasco vuelve', 'Se desatascó hace poco y el problema reaparece en el mismo punto.', 'Cámara recomendada'],
+      ].map(([title, text, tag], k) => ({ title, text, tag, rule: k % 3 === 0 ? '0' : '1px solid #DCD3C6', tagBg: tag === 'Cámara recomendada' ? '#14263D' : tag === 'Urgente' ? '#98643F' : '#E8E1D7', tagColor: tag === 'Cámara recomendada' || tag === 'Urgente' ? '#FFFFFF' : '#14263D' })),
+      camReport: [['Qué tramo se ha revisado', 'Hasta dónde ha podido avanzar la cámara y por qué.'], ['Qué se ha observado', 'Si hay una obstrucción visible y en qué punto aproximado.'], ['Siguiente paso recomendado', 'Desatasco, nueva revisión o consulta a otro profesional.']].map(([title, text], k) => ({ n: n(k), title, text })),
+      camCols: [
+        { title: 'Cuándo es útil', items: ['Atascos que se repiten', 'Varios puntos afectados', 'Viviendas cerradas tiempo'] },
+        { title: 'Qué puede mostrar', items: ['Obstrucciones visibles', 'Acumulaciones en el tramo', 'Dónde se detiene el avance'] },
+        { title: 'Qué condiciona el alcance', items: ['Diámetro y giros', 'Agua acumulada y visibilidad', 'Acceso a registros'] },
+      ],
+      waiting: ['Deja de usar los puntos de agua afectados.', 'Evita productos químicos o desmontar la instalación.', 'Si hay agua saliendo, aleja objetos y no abras tapas pesadas.'],
+      steps: [['Llamas o escribes', 'Por teléfono para urgencias; por WhatsApp si prefieres describirlo.'], ['Nos cuentas el caso', 'Localidad, desagüe afectado y lo que has probado.'], ['Confirmamos condiciones', 'Disponibilidad, desplazamiento y presupuesto antes de autorizar.'], ['Intervenimos y explicamos', 'Resultado, observaciones y siguientes pasos.']].map(([title, text], k) => ({ n: n(k), title, text, nodeBg: k === 0 ? '#B98552' : '#F7F5F0', nodeFg: k === 0 ? '#0D1B2A' : '#98643F' })),
+      cities: [
+        ['Altea', 'altea', 'Marina Baixa', 'Altea la Vella · L’Albir · Callosa d’en Sarrià'],
+        ['Benidorm', 'benidorm', 'Marina Baixa', 'Finestrat · La Nucía · L’Alfàs del Pi'],
+        ['Alicante', 'alicante', 'Entorno metropolitano', 'Sant Vicent del Raspeig · Sant Joan d’Alacant · El Campello'],
+        ['Elche', 'elche', 'Baix Vinalopó', 'El Altet · Torrellano · Santa Pola'],
+        ['Torrevieja', 'torrevieja', 'Vega Baja', 'Guardamar del Segura · Rojales · Orihuela Costa'],
+      ].map(([name, slug, region, areas], k) => ({ name, region, areas, href: `/desatascos-${slug}/`, rule: k === 4 ? '0' : '1px solid rgba(255,255,255,.08)' })),
+      principles: ['Presupuesto antes de autorizar.', 'Sin tarifas genéricas ni tiempos inventados.', 'Solo desatascos e inspección con cámara.'],
+      waMsg: ['Localidad y dirección', 'Qué desagüe falla', 'Desde cuándo ocurre', 'Si has usado algún producto'].map((t, k) => ({ n: n(k), t })),
+    };
+  }
+}
+</script>
+</body>
+</html>
