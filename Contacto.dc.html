@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/styles.css"><script src="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/_ds_bundle.js"></script><style>body{margin:0;background:#d7d3d3}a{color:inherit;text-decoration:none}a:hover{color:var(--color-accent)}</style></helmet>
+<div data-screen-label="Contacto · Escritorio" style="width:1440px;margin:0 auto;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+  <dc-import name="Cabecera" active="contacto" hint-size="100%,76px"></dc-import>
+  <nav aria-label="Ruta de navegación" style="display:flex;gap:10px;padding:14px 48px;border-bottom:2px solid var(--color-divider);font-size:13px;color:var(--color-neutral-700)"><a href="/">Inicio</a><span>/</span><span aria-current="page" style="color:var(--color-text);font-weight:600">Contacto</span></nav>
+  <section style="display:grid;grid-template-columns:repeat(12,1fr);border-bottom:2px solid var(--color-divider)">
+    <div style="grid-column:span 7;padding:64px 48px 56px;border-right:2px solid var(--color-divider)">
+      <h6 style="margin:0 0 28px;color:var(--color-accent-700)">Contacto directo</h6>
+      <h1 style="font-size:112px;line-height:.9;letter-spacing:-.045em;margin:0 0 28px">Cuéntanos <span style="color:var(--color-accent)">qué ocurre.</span></h1>
+      <p style="font-size:20px;line-height:1.5;margin:0;max-width:600px">Desatascos e inspección de tuberías con cámara en la provincia de Alicante. Sin formularios: habla con nosotros por el canal que prefieras.</p>
+    </div>
+    <div style="grid-column:span 5;display:flex;flex-direction:column;justify-content:flex-end;padding:56px 48px;gap:10px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase">
+      <span style="display:flex;gap:10px;align-items:center"><span style="width:8px;height:8px;background:var(--color-accent)"></span>24 horas · 365 días</span><span style="color:var(--color-neutral-700)">Provincia de Alicante</span>
+    </div>
+  </section>
+  <section id="disponibilidad" style="display:grid;grid-template-columns:1fr 1fr;border-bottom:2px solid var(--color-divider)">
+    <article style="display:flex;flex-direction:column;border-right:2px solid var(--color-divider)">
+      <div style="padding:48px 48px 32px;flex:1">
+        <span style="font-size:15px;font-weight:600;color:var(--color-accent-700)">01 — Por teléfono</span>
+        <h2 style="font-size:52px;line-height:1;letter-spacing:-.03em;margin:20px 0 16px">La vía más rápida para una urgencia.</h2>
+        <p style="font-size:18px;line-height:1.5;margin:0 0 28px">Te confirmamos disponibilidad, desplazamiento y presupuesto antes de intervenir.</p>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:20px 0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider)"><span style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700)">Teléfono</span><span style="font-size:40px;font-weight:800;letter-spacing:-.02em">{{ phone }}</span></div>
+      </div>
+      <a href="#llamar" class="btn btn-primary" style="border-radius:0;height:96px;padding:0 48px;justify-content:flex-start;gap:16px;font-size:26px;font-weight:800"><svg width="28" height="28" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"></path></svg>Llamar ahora</a>
+    </article>
+    <article style="display:flex;flex-direction:column">
+      <div style="padding:48px 48px 32px;flex:1">
+        <span style="font-size:15px;font-weight:600;color:var(--color-accent-700)">02 — Por WhatsApp</span>
+        <h2 style="font-size:52px;line-height:1;letter-spacing:-.03em;margin:20px 0 16px">Escríbenos tu localidad y el problema.</h2>
+        <p style="font-size:18px;line-height:1.5;margin:0 0 28px">Una descripción breve basta: qué desagüe falla y desde cuándo.</p>
+        <p style="font-size:14px;line-height:1.5;margin:0;padding:20px 0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);color:var(--color-neutral-700)">Al abrir WhatsApp accederás a un servicio de Meta con su propia política de privacidad. Evita enviar datos sensibles. Un mensaje no implica una reserva ni una intervención confirmada.</p>
+      </div>
+      <a href="#whatsapp" class="btn" style="border-radius:0;height:96px;padding:0 48px;justify-content:flex-start;gap:16px;font-size:26px;font-weight:800;background:var(--color-text);color:var(--color-bg)"><svg width="28" height="28" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"></path></svg>Abrir WhatsApp</a>
+    </article>
+  </section>
+  <section style="display:grid;grid-template-columns:repeat(12,1fr);border-bottom:2px solid var(--color-divider)">
+    <div style="grid-column:span 4;padding:56px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 20px;color:var(--color-accent-700)">03 — Antes de contactar</h6><h2 style="font-size:44px;line-height:1;letter-spacing:-.03em;margin:0">Cuatro datos que nos ayudan.</h2></div>
+    <div style="grid-column:span 8;display:grid;grid-template-columns:1fr 1fr">
+      <sc-for list="{{ prep }}" as="p" hint-placeholder-count="4"><div style="padding:32px 40px;border-bottom:2px solid var(--color-divider);border-right:{{ p.rule }};display:grid;grid-template-columns:48px 1fr;gap:8px;font-size:19px;font-weight:600;line-height:1.35"><span style="color:var(--color-accent-700);font-weight:800">{{ p.n }}</span>{{ p.t }}</div></sc-for>
+    </div>
+  </section>
+  <section style="padding:24px 48px;border-bottom:2px solid var(--color-divider);font-size:14px;color:var(--color-neutral-700)">Consulta cómo se tratarán tus datos en la <a href="/politica-de-privacidad/" style="color:var(--color-accent-700);text-decoration:underline">política de privacidad</a>.</section>
+  <dc-import name="Pie" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;phone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      phone: this.props.phone || 'NEXT_PUBLIC_PHONE',
+      prep: ['Tu localidad y dirección.', 'Qué desagües están afectados.', 'Si has usado algún producto químico.', 'Quién facilitará el acceso.'].map((t, i) => ({ n: '0' + (i + 1), t, rule: i % 2 === 0 ? '2px solid var(--color-divider)' : '0' })),
+    };
+  }
+}
+</script>
+</body>
+</html>

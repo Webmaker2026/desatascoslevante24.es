@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/styles.css"><script src="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/_ds_bundle.js"></script><style>body{margin:0;background:#d7d3d3}a{color:inherit;text-decoration:none}a:hover{color:var(--color-accent)}</style></helmet>
+<div style="display:flex;flex-direction:column;gap:64px;padding:48px 0">
+<div data-screen-label="Zonas · Escritorio" style="width:1440px;margin:0 auto;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+  <dc-import name="Cabecera" active="zonas" hint-size="100%,76px"></dc-import>
+  <nav aria-label="Ruta de navegación" style="display:flex;gap:10px;padding:14px 48px;border-bottom:2px solid var(--color-divider);font-size:13px;color:var(--color-neutral-700)"><a href="/">Inicio</a><span>/</span><span style="color:var(--color-text);font-weight:600">Zonas de servicio</span></nav>
+  <section style="display:grid;grid-template-columns:repeat(12,1fr);border-bottom:2px solid var(--color-divider)">
+    <div style="grid-column:span 8;padding:64px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 28px;color:var(--color-accent-700)">Provincia de Alicante</h6><h1 style="font-size:112px;line-height:.9;letter-spacing:-.045em;margin:0">La ayuda empieza <span style="color:var(--color-accent)">cerca de ti.</span></h1></div>
+    <p style="grid-column:span 4;align-self:end;margin:0;padding:64px 48px;font-size:19px;line-height:1.5">Selecciona tu localidad para conocer el servicio de desatascos 24 horas e inspección con cámara en tu zona.</p>
+  </section>
+  <section style="display:grid;grid-template-columns:repeat(5,1fr);border-bottom:2px solid var(--color-divider)">
+    <sc-for list="{{ cities }}" as="c" hint-placeholder-count="5">
+      <a href="{{ c.href }}" style="display:flex;flex-direction:column;gap:12px;padding:32px 28px 28px;border-right:2px solid var(--color-divider);min-height:420px" style-hover="background:var(--color-surface)">
+        <span style="font-size:15px;font-weight:600;color:var(--color-accent-700)">{{ c.n }}</span>
+        <span style="font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1;margin-top:40px">{{ c.name }}</span>
+        <span style="font-size:13px;color:var(--color-neutral-700)">{{ c.region }}</span>
+        <span style="font-size:15px;line-height:1.6;padding-top:16px;border-top:2px solid var(--color-divider);margin-top:12px">{{ c.areas }}</span>
+        <span style="margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:800">Consultar servicio<svg width="22" height="22" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:square"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg></span>
+      </a>
+    </sc-for>
+  </section>
+  <section style="display:grid;grid-template-columns:repeat(12,1fr);background:var(--color-surface);border-bottom:2px solid var(--color-divider)">
+    <h4 style="grid-column:span 4;margin:0;padding:40px 48px;font-size:22px;border-right:2px solid var(--color-divider)">¿Tu localidad no aparece?</h4>
+    <p style="grid-column:span 5;margin:0;padding:40px;font-size:18px;line-height:1.5">Consulta la cobertura en el entorno de estas zonas. La disponibilidad se confirma para cada dirección; no se garantiza un tiempo de llegada fijo.</p>
+    <a href="#llamar" class="btn btn-primary" style="grid-column:span 3;border-radius:0;justify-content:flex-start;padding:0 40px;font-size:22px;font-weight:800">Consultar por teléfono</a>
+  </section>
+  <dc-import name="Pie" hint-size="100%,420px"></dc-import>
+</div>
+
+<div data-screen-label="Legal · Escritorio" style="width:1440px;margin:0 auto;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+  <dc-import name="Cabecera" hint-size="100%,76px"></dc-import>
+  <nav aria-label="Ruta de navegación" style="display:flex;gap:10px;padding:14px 48px;border-bottom:2px solid var(--color-divider);font-size:13px;color:var(--color-neutral-700)"><a href="/">Inicio</a><span>/</span><span style="color:var(--color-text);font-weight:600">Aviso legal</span></nav>
+  <section style="display:grid;grid-template-columns:repeat(12,1fr)">
+    <aside style="grid-column:span 3;border-right:2px solid var(--color-divider);padding:48px 0 48px">
+      <h6 style="margin:0 0 16px;padding:0 48px;color:var(--color-neutral-700)">Información legal</h6>
+      <a href="/aviso-legal/" style="display:block;padding:14px 48px;border-top:2px solid var(--color-divider);font-size:17px;font-weight:800;color:var(--color-accent)">Aviso legal</a>
+      <a href="/politica-de-privacidad/" style="display:block;padding:14px 48px;border-top:2px solid var(--color-divider);font-size:17px;font-weight:800">Política de privacidad</a>
+      <a href="/politica-de-cookies/" style="display:block;padding:14px 48px;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);font-size:17px;font-weight:800">Política de cookies</a>
+    </aside>
+    <article style="grid-column:span 7;padding:48px 48px 80px">
+      <h1 style="font-size:72px;line-height:.95;letter-spacing:-.04em;margin:0 0 32px">Aviso legal</h1>
+      <div style="padding:18px 22px;background:var(--color-accent-100);color:var(--color-accent-800);font-size:15px;line-height:1.5;margin-bottom:40px;border-left:0;border-top:4px solid var(--color-accent)">Documento con campos pendientes de completar por el titular antes del lanzamiento (NEXT_PUBLIC_LEGAL_REVIEWED).</div>
+      <h2 style="font-size:30px;margin:0 0 16px">1. Datos identificativos</h2>
+      <dl style="margin:0 0 40px;border-top:2px solid var(--color-divider)">
+        <sc-for list="{{ legal }}" as="l" hint-placeholder-count="5"><div style="display:grid;grid-template-columns:200px 1fr;gap:20px;padding:14px 0;border-bottom:2px solid var(--color-divider);font-size:16px"><dt style="font-weight:800">{{ l.k }}</dt><dd style="margin:0;color:var(--color-neutral-700)">{{ l.v }}</dd></div></sc-for>
+      </dl>
+      <h2 style="font-size:30px;margin:0 0 16px">2. Objeto</h2>
+      <p style="font-size:17px;line-height:1.65;margin:0;max-width:720px">Este sitio informa sobre los servicios de desatascos e inspección de tuberías con cámara en la provincia de Alicante y facilita canales de contacto directo por teléfono y WhatsApp.</p>
+    </article>
+  </section>
+  <dc-import name="Pie" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      cities: [['Alicante','alicante','Alicante y entorno metropolitano','Sant Vicent del Raspeig · Sant Joan d’Alacant · El Campello'],['Benidorm','benidorm','Benidorm · Marina Baixa','Finestrat · La Nucía · L’Alfàs del Pi'],['Torrevieja','torrevieja','Torrevieja · Vega Baja','Guardamar del Segura · Rojales · Orihuela Costa'],['Elche','elche','Elche · Baix Vinalopó','El Altet · Torrellano · Santa Pola'],['Altea','altea','Altea · Marina Baixa','Altea la Vella · L’Albir · Callosa d’en Sarrià']].map(([name, slug, region, areas], i) => ({ n: '0' + (i + 1), name, region, areas, href: `/desatascos-${slug}/` })),
+      legal: [['Titular', 'NEXT_PUBLIC_COMPANY_NAME'], ['NIF/CIF', 'NEXT_PUBLIC_TAX_ID'], ['Domicilio', 'NEXT_PUBLIC_ADDRESS'], ['Correo', 'NEXT_PUBLIC_EMAIL'], ['Registro', 'NEXT_PUBLIC_REGISTRY']].map(([k, v]) => ({ k, v })),
+    };
+  }
+}
+</script>
+</body>
+</html>

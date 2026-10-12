@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/styles.css"><script src="_ds/modernist-2fe25cee-2cde-4b3d-9036-6ae69afc74be/_ds_bundle.js"></script><style>body{margin:0;background:#d7d3d3}a{color:inherit;text-decoration:none}</style></helmet>
+<div data-screen-label="Sistema de diseño" style="width:1440px;margin:0 auto;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+  <section style="padding:64px 48px 40px;border-bottom:2px solid var(--color-divider)"><h6 style="margin:0 0 20px;color:var(--color-accent-700)">Desatascos Levante 24 · Sistema</h6><h1 style="font-size:96px;line-height:.92;letter-spacing:-.045em;margin:0">Rojo de urgencia, retícula visible, cero adornos.</h1></section>
+
+  <section style="display:grid;grid-template-columns:repeat(6,1fr);border-bottom:2px solid var(--color-divider)">
+    <sc-for list="{{ colors }}" as="c" hint-placeholder-count="6">
+      <div style="border-right:2px solid var(--color-divider)"><div style="height:140px;background:{{ c.v }};border-bottom:2px solid var(--color-divider)"></div><div style="padding:16px 20px;display:flex;flex-direction:column;gap:4px"><strong style="font-size:16px">{{ c.name }}</strong><span style="font-size:13px;color:var(--color-neutral-700)">{{ c.token }}</span><span style="font-size:13px;color:var(--color-neutral-700)">{{ c.use }}</span></div></div>
+    </sc-for>
+  </section>
+
+  <section style="display:grid;grid-template-columns:3fr 9fr;border-bottom:2px solid var(--color-divider)">
+    <div style="padding:40px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 12px">Tipografía</h6><p style="margin:0;font-size:15px;line-height:1.5">Archivo 400 / 600 / 800, autoalojada. Titulares 800 con interletraje negativo; cuerpo 400 a 16–20 px.</p></div>
+    <div>
+      <sc-for list="{{ type }}" as="t" hint-placeholder-count="6">
+        <div style="display:grid;grid-template-columns:200px 1fr;align-items:baseline;gap:24px;padding:18px 48px 18px 40px;border-bottom:2px solid var(--color-divider)"><span style="font-size:13px;color:var(--color-neutral-700)">{{ t.spec }}</span><span style="font-size:{{ t.size }};font-weight:{{ t.w }};line-height:1;letter-spacing:{{ t.ls }}">{{ t.sample }}</span></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="display:grid;grid-template-columns:3fr 9fr;border-bottom:2px solid var(--color-divider)">
+    <div style="padding:40px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 12px">Botones</h6><p style="margin:0;font-size:15px;line-height:1.5">Etiqueta siempre alineada a la izquierda. Sin radio. Altura mínima 64 px en móvil, 80–96 px en hero.</p></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0">
+      <div style="padding:32px 40px;border-right:2px solid var(--color-divider);display:flex;flex-direction:column;gap:12px"><span style="font-size:13px;color:var(--color-neutral-700)">Llamada · primario</span><a class="btn btn-primary" style="border-radius:0;height:80px;padding:0 24px;justify-content:flex-start;font-size:22px;font-weight:800">Llamar ahora</a></div>
+      <div style="padding:32px 40px;border-right:2px solid var(--color-divider);display:flex;flex-direction:column;gap:12px"><span style="font-size:13px;color:var(--color-neutral-700)">WhatsApp · secundario</span><a class="btn btn-secondary" style="border-radius:0;height:80px;padding:0 24px;justify-content:flex-start;font-size:22px;font-weight:800;border:2px solid var(--color-text)">WhatsApp</a></div>
+      <div style="padding:32px 40px;background:var(--color-accent);display:flex;flex-direction:column;gap:12px"><span style="font-size:13px;color:var(--color-bg)">Sobre rojo · tinta</span><a class="btn" style="border-radius:0;height:80px;padding:0 24px;justify-content:flex-start;font-size:22px;font-weight:800;background:var(--color-text);color:var(--color-bg)">Llamar ahora</a></div>
+    </div>
+  </section>
+
+  <section style="display:grid;grid-template-columns:3fr 9fr;border-bottom:2px solid var(--color-divider)">
+    <div style="padding:40px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 12px">Retícula</h6><p style="margin:0;font-size:15px;line-height:1.5">12 columnas, márgenes 48 px (tablet 32, móvil 20). Las celdas se separan con reglas de 2 px, no con espacio vacío.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);height:160px;margin:0 48px 0 40px"><sc-for list="{{ cols }}" as="c" hint-placeholder-count="12"><div style="background:var(--color-accent-100);border-right:2px solid var(--color-bg);display:flex;align-items:flex-end;padding:8px;font-size:12px;color:var(--color-accent-800)">{{ c }}</div></sc-for></div>
+  </section>
+
+  <section style="border-bottom:2px solid var(--color-divider)">
+    <div style="padding:40px 48px 24px"><h6 style="margin:0">Navegación · escritorio</h6></div>
+    <dc-import name="Cabecera" active="desatascos" hint-size="100%,76px"></dc-import>
+  </section>
+
+  <section style="display:grid;grid-template-columns:3fr 9fr">
+    <div style="padding:40px 48px;border-right:2px solid var(--color-divider)"><h6 style="margin:0 0 12px">Navegación · móvil</h6><p style="margin:0;font-size:15px;line-height:1.5">Cabecera fija de 64 px con botón de llamada siempre visible. Barra inferior fija con Llamar (60%) y WhatsApp (40%), respetando safe-area.</p></div>
+    <div style="display:flex;gap:40px;padding:40px;background:var(--color-surface);align-items:flex-start">
+      <div style="width:390px;height:560px;background:var(--color-bg);border:2px solid var(--color-text);display:flex;flex-direction:column;position:relative">
+        <dc-import name="Cabecera" mobile="{{ true }}" hint-size="100%,64px"></dc-import>
+        <div style="padding:24px 20px;flex:1"><div style="font-size:40px;font-weight:800;line-height:1;letter-spacing:-.03em">Desatascos <span style="color:var(--color-accent)">24 horas</span>…</div></div>
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;border-top:2px solid var(--color-text)"><a class="btn btn-primary" style="border-radius:0;height:64px;padding:0 18px;justify-content:flex-start;font-size:18px;font-weight:800">Llamar 24 h</a><a class="btn" style="border-radius:0;height:64px;padding:0 16px;justify-content:flex-start;font-size:16px;font-weight:800;border-left:2px solid var(--color-text)">WhatsApp</a></div>
+      </div>
+      <div style="width:390px;height:560px;background:var(--color-bg);border:2px solid var(--color-text);position:relative">
+        <dc-import name="Cabecera" mobile="{{ true }}" open="{{ true }}" hint-size="100%,64px"></dc-import>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      colors: [
+        ['Fondo', '--color-bg · #f3f2f2', 'Superficie base', 'var(--color-bg)'],
+        ['Superficie', '--color-surface · #eae9e9', 'Bandas 24 h, notas', 'var(--color-surface)'],
+        ['Tinta', '--color-text · #201e1d', 'Texto, botón sobre rojo', 'var(--color-text)'],
+        ['Rojo urgencia', '--color-accent · #ec3013', 'Llamada, cierre', 'var(--color-accent)'],
+        ['Rojo texto', '--color-accent-700 · #ae1800', 'Etiquetas pequeñas', 'var(--color-accent-700)'],
+        ['Regla', '--color-divider · tinta 40%', 'Reglas de 2 px', 'var(--color-divider)'],
+      ].map(([name, token, use, v]) => ({ name, token, use, v })),
+      type: [
+        ['Display · 92–120 / 0.92 / −4.5%', '92px', 800, '-.04em', 'Desatascos 24 h'],
+        ['H2 · 52–60 / 1.0 / −3%', '56px', 800, '-.03em', 'Ver el problema.'],
+        ['H3 · 26–32 / 1.1', '30px', 800, '-.02em', 'Desatasco de WC'],
+        ['Lead · 18–21 / 1.5', '20px', 400, '0', 'Atención urgente en Alicante, Benidorm y alrededores.'],
+        ['Cuerpo · 16–17 / 1.5', '16px', 400, '0', 'Confirmamos la disponibilidad para tu dirección.'],
+        ['Etiqueta · 13 / mayús. / +8%', '13px', 600, '.08em', 'ATENCIÓN 24 H · 365 DÍAS'],
+      ].map(([spec, size, w, ls, sample]) => ({ spec, size, w, ls, sample })),
+      cols: Array.from({ length: 12 }, (_, i) => String(i + 1)),
+    };
+  }
+}
+</script>
+</body>
+</html>
